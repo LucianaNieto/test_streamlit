@@ -22,19 +22,10 @@ def ee_authenticate(token_name="EARTHENGINE_TOKEN"):
 
 st.sidebar.title("About")
 st.sidebar.info(
-    """
-    Web App URL: <https://geospatial.streamlitapp.com>
-    GitHub repository: <https://github.com/giswqs/streamlit-geospatial>
+    """ buscoCampo / images 
     """
 )
 
-st.sidebar.title("Contact")
-st.sidebar.info(
-    """
-    Qiusheng Wu: <https://wetlands.io>
-    [GitHub](https://github.com/giswqs) | [Twitter](https://twitter.com/giswqs) | [YouTube](https://www.youtube.com/c/QiushengWu) | [LinkedIn](https://www.linkedin.com/in/qiushengwu)
-    """
-)
 
 goes_rois = {
     "Creek Fire, CA (2020-09-05)": {
@@ -234,12 +225,11 @@ def app():
 
     today = date.today()
 
-    st.title("Create Satellite Timelapse")
+    st.title("Satelite")
 
     st.markdown(
         """
-        An interactive web app for creating [Landsat](https://developers.google.com/earth-engine/datasets/catalog/landsat)/[GOES](https://jstnbraaten.medium.com/goes-in-earth-engine-53fbc8783c16) timelapse for any location around the globe. 
-        The app was built using [streamlit](https://streamlit.io), [geemap](https://geemap.org), and [Google Earth Engine](https://earthengine.google.com). For more info, check out my streamlit [blog post](https://blog.streamlit.io/creating-satellite-timelapse-with-streamlit-and-earth-engine). 
+     
     """
     )
 
@@ -262,7 +252,7 @@ def app():
             locate_control=True,
             plugin_LatLngPopup=False,
         )
-        m.add_basemap("ROADMAP")
+        m.add_basemap("HYBRID")
 
     with row1_col2:
 

@@ -11,8 +11,8 @@ Sigannos en TW <https://twitter.com/AgRemotegirl>
 
 st.sidebar.title("About")
 st.sidebar.info(markdown)
-logo = "https://search.brave.com/images?q=logos&img=113"
-st.sidebar.image(logo)
+#logo = "https://search.brave.com/images?q=logos&img=113"
+#st.sidebar.image(logo)
 
 # Customize page title
 st.title("reportes BuscoCampo")

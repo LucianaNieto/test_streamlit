@@ -2,17 +2,17 @@ import streamlit as st
 import leafmap.foliumap as leafmap
 
 markdown = """
-Web App URL: <https://template.streamlitapp.com>
-GitHub Repository: <https://github.com/giswqs/streamlit-multipage-template>
+Esta pagina es parte de los servicios de BuscoCampo, su informacion no sera compartida con terceros
+Sigannos en TW <https://twitter.com/AgRemotegirl>
 """
 
 st.sidebar.title("About")
 st.sidebar.info(markdown)
-logo = "https://i.imgur.com/UbOXYAU.png"
-st.sidebar.image(logo)
+#logo = "https://i.imgur.com/UbOXYAU.png"
+#st.sidebar.image(logo)
 
 
-st.title("Interactive Map")
+st.title("Subir Campo")
 
 col1, col2 = st.columns([4, 1])
 options = list(leafmap.basemaps.keys())
@@ -20,7 +20,7 @@ index = options.index("OpenTopoMap")
 
 with col2:
 
-    basemap = st.selectbox("Select a basemap:", options, index)
+    basemap = st.selectbox("Seleccionar:", options, index)
 
 
 with col1:

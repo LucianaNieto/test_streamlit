@@ -23,6 +23,7 @@ def ee_authenticate(token_name="EARTHENGINE_TOKEN"):
 st.sidebar.title("About")
 st.sidebar.info(
     """ buscoCampo / images 
+    aca se pueden poner mas cosas, links logos etc 
     """
 )
 
@@ -270,7 +271,7 @@ def app():
                 st.session_state["zoom_level"] = 12
 
         collection = st.selectbox(
-            "Select a satellite image collection: ",
+            "Elija que opcion desea: ",
             [
                 "Any Earth Engine ImageCollection",
                 "Landsat TM-ETM-OLI Surface Reflectance",
@@ -547,7 +548,7 @@ def app():
     with row1_col1:
 
         with st.expander(
-            "Steps: Draw a rectangle on the map -> Export it as a GeoJSON -> Upload it back to the app -> Click the Submit button. Expand this tab to see a demo 👉"
+            "Instrucciones: localize su campo haciendo zoom -> dibuje el poligono del campo-> en el sector derecho vera un boton que dice 'export' -> exporte como GeoJSON en una locacion que recuerde -> subalo a la app -> Click the Submit button. Expand this tab to see a demo 👉"
         ):
             video_empty = st.empty()
 

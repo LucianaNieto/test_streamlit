@@ -548,12 +548,12 @@ def app():
     with row1_col1:
 
         with st.expander(
-            "Instrucciones: localize su campo haciendo zoom -> dibuje el poligono del campo-> en el sector derecho vera un boton que dice 'export' -> exporte como GeoJSON en una locacion que recuerde -> subalo a la app -> Click the Submit button. Expand this tab to see a demo 👉"
+            "Instrucciones: localize su campo haciendo zoom -> dibuje el poligono del campo-> en el sector derecho vera un boton que dice 'export' -> exporte como GeoJSON en una locacion que recuerde -> subalo a la app -> 👉"
         ):
             video_empty = st.empty()
 
         data = st.file_uploader(
-            "Upload a GeoJSON file to use as an ROI. Customize timelapse parameters and then click the Submit button 😇👇",
+            "Suba el archivo de su campo aqui",
             type=["geojson", "kml", "zip"],
         )
 

@@ -257,7 +257,7 @@ def app():
 
     with row1_col2:
 
-        keyword = st.text_input("Search for a location:", "")
+        keyword = st.text_input("Busque su ciudad mas cercana:", "")
         if keyword:
             locations = geemap.geocode(keyword)
             if locations is not None and len(locations) > 0:
